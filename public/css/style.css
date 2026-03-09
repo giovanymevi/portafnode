@@ -67,3 +67,91 @@ body {
 .btn:hover {
     background-color: #c13548;
 }
+
+/* Estilos de la Galería */
+#proyectos {
+  position: relative; /* Para posicionar las partículas */
+  overflow: hidden; /* Para que las partículas no se salgan */
+  padding: 50px;
+  background: #f4f4f4;
+  height: 100vh;
+  text-align: center;
+}
+
+.proyectos-content {
+  position: relative;
+  z-index: 2;
+}
+
+#particles-proyectos {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Detrás del contenido */
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  max-width: 350px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Estilos de Habilidades */
+#habilidades {
+  text-align: center;
+}
+
+.skills-container {
+  margin-top: 30px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills-list li {
+  background-color: #e94560;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
